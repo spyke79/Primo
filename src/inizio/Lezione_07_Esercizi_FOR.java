@@ -23,6 +23,14 @@ public class Lezione_07_Esercizi_FOR {
             System.out.println(i);
         }
 
+        
+        /*
+         * Chiedere all'utente di inserire 5 numeri
+         * 
+         * Al termine dire qunti numeri pari sono stai inseriti e qunati numeri dispari
+         * 
+         */
+        
         input.close();
 	}
 }
