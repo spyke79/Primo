@@ -14,11 +14,15 @@ public class Lezione_10_STRINGHE {
 		System.out.println(nome.length());
 
 		System.out.println("Stampo il primo carattere della stringa: " + nome.charAt(0));
+		System.out.println("Stampo il secondo carattere della stringa: " + nome.charAt(1));
 		
 		System.out.println("Stampo l'ulitmo carattere della stringa: " + nome.charAt(nome.length() - 1));
 		
 		//Scrivere il tuo nome in una stringa e stapare ogni lettera su una nuova riga
 		
+		for(int i = 0; i < nome.length(); i++) {
+			System.out.println(nome.charAt(i));
+		}
 	}
 
 }
