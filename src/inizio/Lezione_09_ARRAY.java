@@ -107,6 +107,26 @@ public class Lezione_09_ARRAY {
 		 * Gli alunni inserito sono: Michele Antonio Mario
 		 */
 		
+		System.out.println("\n\n----soluzione esercizio----");
+		System.out.println("Quanti alunni vuoi inserire nella classe?: ");
+		
+		int n_alunni = in.nextInt(); //L'utente inserisce il numero degli alunni da inserire
+		
+		String[] alunni = new String[n_alunni];
+		
+		//Chiedo all'utente d inserire i tre nomi e li memorizzo
+		
+		for(int i = 0; i < alunni.length; i++) {
+			System.out.println("Inserisci il nome: ");
+			alunni[i] = in.nextLine();
+		}
+		
+		//Stampo i nomi inseriti
+		System.out.println("I nomi inseriti sono: ");
+		for(int i = 0; i < alunni.length; i++) {
+			System.out.println(alunni[i]);
+		}
+		
 	}
 
 }
