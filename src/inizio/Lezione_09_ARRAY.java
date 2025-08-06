@@ -65,6 +65,33 @@ public class Lezione_09_ARRAY {
 		}
 		
 		//Crea un array di 5 posizioni, riempi l'array con i valori a piacere e stampa il contenuto a video
+		int somma = 0;
+		
+		for(int i = 0; i < ar_num2.length; i++) {
+			somma += ar_num2[i];
+		}
+		
+		System.out.println("Il totale dei numeri dell'array è: " + somma);
+		
+		for(int i = ar_num2.length - 1; i >= 0; i--) {
+			System.out.println(ar_num2[i]);
+		}
+		
+		String[] classe = new String[3];
+		
+		//Chiedo all'utente d inserire i tre nomi e li memorizzo
+		
+		for(int i = 0; i < classe.length; i++) {
+			System.out.println("Inserisci il nome: ");
+			classe[i] = in.nextLine();
+		}
+		
+		//Stampo i nomi inseriti
+		System.out.println("I nomi inseriti sono: ");
+		for(int i = 0; i < classe.length; i++) {
+			System.out.println(classe[i]);
+		}
+		
 	}
 
 }
