@@ -50,7 +50,34 @@ public class Lezione_08_WHILE {
 		}
 		
 		System.out.println("Ho finito di salutare");
+		
+		/*
+		 * Esercizio:
+		 * 
+		 * Fare la somma dei numeri inseti da tastiera, il programma si ferma quanso si inserise 0.
+		 * 
+		 * Bonus, dire quanti numeri sono stati inseriti
+		 */
 
+		int num_inp;
+		int somma = 0;
+		int tot_num = 0;
+		
+		System.out.println("Sommo i numeri inserisci 0 per terminare.");
+		num_inp = in.nextInt(); //Posso inserire tutti i numeri anche 0
+		
+		while(num_inp != 0) { //Finchè il numero che hai inserito è diverso da 0 eseguo il while
+			tot_num++; //Incremento il numero di numeri inseriti diversi da 0
+			somma += num_inp; //Aggiorno la somma
+			
+			//Incremento dell'indice devo chiedere un nuovo numero e verificare che non sia 0
+			System.out.println("Inserisci un nuovo numero, 0 per teminare");
+			num_inp = in.nextInt(); //Ricevo un nnuvo numero da tastiera e lo faccio testare nella condizione del while
+			
+		}
+		
+		System.out.println("La somma dei numeri inseriti è: " + somma + " e hai inserito " + tot_num + " numeri");
+		System.out.println("La media è: " + (somma/tot_num)); //Soluzione esercizio sotto
 	}
 
 }
