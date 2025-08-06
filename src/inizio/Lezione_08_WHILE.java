@@ -78,6 +78,39 @@ public class Lezione_08_WHILE {
 		
 		System.out.println("La somma dei numeri inseriti è: " + somma + " e hai inserito " + tot_num + " numeri");
 		System.out.println("La media è: " + (somma/tot_num)); //Soluzione esercizio sotto
+		
+		
+		/*
+		 * DO WHILE
+		 * 
+		 * si usa quando devo fare un operazione almeno la prima volta
+		 * 
+		 * while: prima controlla la condizione di uscita e poi esegue il codice
+		 * 
+		 * do while: prime esegue e poi controlla la condizione di uscita
+		 * 
+		 * quello che si sicrive nel do{} verrà eseguito almeno una volta
+		 * 
+		 * es: devo inizializzare la variabile per effettuare la ndizione di uscita
+		 * 
+		 */
+		
+		//Stesso esercizio ma fatto con do while
+		System.out.println("\n\n---------DO WHILE------------");
+		somma = 0; //Resetto il contenuto di somma a 0
+		tot_num = 0; //Ressetto l'indice per il contegigo dei numeri inseriti
+		
+		do {
+			System.out.println("Inserisci un numero e farò la somma, 0 per terminare");
+			num_inp = in.nextInt();
+			
+			somma += num_inp;
+			tot_num++;
+			
+		}while(num_inp != 0);
+		
+		System.out.println("La somma dei numeri inseriti è: " + somma + " e hai inserito " + tot_num + " numeri");
+		System.out.println("La media è: " + (somma/tot_num)); //Soluzione esercizio sotto
 	}
 
 }
