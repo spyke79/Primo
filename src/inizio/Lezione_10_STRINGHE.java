@@ -23,6 +23,8 @@ public class Lezione_10_STRINGHE {
 		for(int i = 0; i < nome.length(); i++) {
 			System.out.println(nome.charAt(i));
 		}
+		
+		//Scrivi il tuo nome al contrario e dimmi quante vocali ci sono 
 	}
 
 }
