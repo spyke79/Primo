@@ -92,6 +92,21 @@ public class Lezione_09_ARRAY {
 			System.out.println(classe[i]);
 		}
 		
+		
+		/*
+		 * Creazione della classe.
+		 * Chidere al'utente di quanti alunni è composta la classe.
+		 * Creare un array e inserire gli alunni.
+		 * 
+		 * ES: 
+		 * Quanti alunni vuoi inserire? -> 3
+		 * Inserisci 1° alunno: Michele
+		 * Inserisci 2° alunno: Antonio
+		 * Inserisci 3° alunno: Mario
+		 * 
+		 * Gli alunni inserito sono: Michele Antonio Mario
+		 */
+		
 	}
 
 }
