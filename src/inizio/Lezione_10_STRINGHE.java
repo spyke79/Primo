@@ -167,6 +167,28 @@ public class Lezione_10_STRINGHE {
 		 * 
 		 * e dire se la parola o frase inserita è palindroma
 		 */
+		
+		System.out.println("Inserisci una parla e ti stampo la frase al contrario dicendoti se è palindorma");
+		
+		String parola = in.nextLine();
+		String p_rev = "";//Inizializzo la stinga a vuoto
+		
+		
+		//Vado a scrivere la parola al contrario e la salvo in p_rev
+		for(int i = parola.length() - 1; i >= 0; i--) {
+		//	System.out.println(parola.charAt(i));
+			p_rev += parola.charAt(i);
+		}
+		
+		System.out.println("La parola al contrario è: " + p_rev);
+		
+		if(parola.equals(p_rev)) {
+			System.out.println("il testo inserito è palindromo");
+		}else {
+			System.out.println("Il testo inserito non è palindromo");
+		}
+		
+		
 	}
 
 }
