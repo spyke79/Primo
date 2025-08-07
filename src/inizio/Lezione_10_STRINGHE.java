@@ -1,10 +1,13 @@
 package inizio;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Lezione_10_STRINGHE {
 
 	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
 		
 		int numero = 1;
 		String nome = "Michele Sorbo";
@@ -139,6 +142,21 @@ public class Lezione_10_STRINGHE {
 		
 		//Chiedere all'utente di inserire dei numeri divisi dalla virgola, dopo che ha inviato i numeri stapare la somma dei numeri inseriti e 
 		// la loro media
+		double es_somma = 0;
+		System.out.println("Scrivi qutni numeri vuoi divisi da una virgola e ti ritornerò la somma:");
+		
+		String es_num = in.nextLine();
+		
+		es_num = es_num.replace(" ",""); //Elimino gli spazzi dopo la virgola se ci sono
+		es_num = es_num.trim();
+		
+		String[] ar_es_num = es_num.split(",");
+		
+		for(int i = 0; i < ar_es_num.length; i++) {
+			es_somma += Double.parseDouble(ar_es_num[i]);
+		}
+		
+		System.out.println("La somma dei numeri è: " + es_somma + " e la loro media è: " + (es_somma/ar_es_num.length));
 	}
 
 }
