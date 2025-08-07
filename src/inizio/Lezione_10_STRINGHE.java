@@ -157,6 +157,16 @@ public class Lezione_10_STRINGHE {
 		}
 		
 		System.out.println("La somma dei numeri è: " + es_somma + " e la loro media è: " + (es_somma/ar_es_num.length));
+		
+		/*
+		 * Es 1: Facile
+		 * Chiedere una frase e contare il numero di parole nella frase
+		 * 
+		 * Es 2 medio:
+		 * Scrivere un programma che prenda una parola o frase e la stampa al contrario
+		 * 
+		 * e dire se la parola o frase inserita è palindroma
+		 */
 	}
 
 }
