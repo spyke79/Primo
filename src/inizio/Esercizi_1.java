@@ -1,20 +1,17 @@
 package inizio;
 
+import java.util.Random;
+
+
 public class Esercizi_1 {
 
 	public static void main(String[] args) {
-		/*
-		 * Esercizio 1
-		 * Scrivi un programma che stampi il tuo nome, cognome ed età su tre righe separate
-		 * 
-		 * Esercizio 2
-		 * Fai la stessa cosa del primo esercizio ma su un unica riga
-		 * 
-		 * Esercizio 3
-		 * Scrivi un programma che usi più righe per disegnare una semplice faccia sorridente o una casa 
-		 * usando solo i caratteri
-		 * 
-		 */
+		
+		Random rm = new Random();//Per generare un numero random
+		
+		String[] simboli = {"carta","sasso","forbici"};
+		
+		System.out.println("Il pc ha giocato: " + simboli[rm.nextInt(3)]); //Genera un numero casuale tra 0 e 3 esculo
 
 	}
 
