@@ -22,3 +22,20 @@ Stapare tutte le persone nella lista
 
 Scelta 4)
 Ordinare la lista e dopo far uscire: Elenco ordinato
+
+
+***** FUNZIONI ******
+Esercizio 3:
+Creare una funzione che passato un prezzo e la percentuale di sconto stampi a video il prezzo scontato
+
+Il prezzo è di tipo double, la percentuale è di tipo int.
+Verifca che la percentuale sia sompresa tra 0 e 100. Se la percentuale è fuori dal range dire sconto non applicabile 
+
+Esercizio 4: FUNZIONI SENZA RITORNO
+Creare 4 funzioni una per la somma di 2 interi, una per la sottrazione di 2 interi, una per la moltiplicazione di 
+2 interi e una per la divisione di 2 interi.
+
+Per la divisione controllare se il secondo parametro è diverso da 0.
+
+Nella funzione mail creare un ciclo per far scegliere quale operazione compiere e inserire l'ozione di uscita
+

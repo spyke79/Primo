@@ -1,9 +1,13 @@
 package inizio;
 
+import java.util.ArrayList;
+
 public class Lezione_12_METODI_FUNZIONI {
 
 	//é il metotdo prinicpale di una classe
 	public static void main(String[] args) {
+		ArrayList<String> persone = new ArrayList<String>();
+		ArrayList<String> persone1 = new ArrayList<String>();
 		
 		System.out.println("SONO IL METODO PRICIPALE");
 		
@@ -39,7 +43,26 @@ public class Lezione_12_METODI_FUNZIONI {
 		somma(n1, n2);
 		somma(12,3);
 		somma(23.5,6.8, 8);
-	}
+		
+		int[] ar_1 = {2,45,6,76,54};
+		int[] ar_2 = {32,56,76,8};
+		
+		stampaAR(ar_1);
+		stampaAR(ar_2);
+		
+		String[] ar_3 = {"Michele","Pasquale", "Mario"};
+		stampaAR(ar_3);
+		
+		
+		//Metodo su ArrayList
+		addPersona("Pasquale", persone);
+		addPersona("Michele", persone1);
+		
+		leggiPersone(persone);
+		leggiPersone(persone1);
+		
+		
+ 	}
 	
 	//FUORI DALLA FUNZIONE MAIN POSSO CREARE NUOVE FUNZIONI
 	
@@ -97,5 +120,31 @@ public class Lezione_12_METODI_FUNZIONI {
 	public static void somma(double a, double b, double c) {
 		System.out.println("La somma è: " + (a+b+c));
 	}
-
+	
+	public static void stampaAR(int[] ar) {
+		System.out.println("\n\n----Stampa Contenuto Array----\n");
+		for(int i = 0; i < ar.length; i++) {
+			System.out.println("Elemento indice " + i + " valore: " + ar[i] );
+		}
+	}
+	
+	public static void stampaAR(String[] ar) {
+		System.out.println("\n\n----Stampa Contenuto Array----\n");
+		for(int i = 0; i < ar.length; i++) {
+			System.out.println("Elemento indice " + i + " valore: " + ar[i] );
+		}
+	}
+	
+	//Metodi per gestire un Array List
+	public static void addPersona(String p, ArrayList<String> arL) {
+		arL.add(p);
+	}
+	
+	public static void leggiPersone(ArrayList<String> arL) {
+		System.out.println("\n\n----Stampa Contenuto ArrayList----\n");
+		for(int i = 0; i < arL.size(); i++) {
+			System.out.println("Elemento ad indice: " + i + " Valore: " + arL.get(i));
+		}
+	}
+	
 }
